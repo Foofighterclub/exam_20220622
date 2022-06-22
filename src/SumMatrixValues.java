@@ -26,6 +26,4 @@ public class SumMatrixValues {
     System.out.printf("RESULT: %s", result);
 
   }
-
-
 }
