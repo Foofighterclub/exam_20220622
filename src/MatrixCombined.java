@@ -83,12 +83,12 @@ public class MatrixCombined {
     System.out.println("{");
 
     for (int i = 0; i < inputArray.length; i++) {
-      System.out.printf("{");
+      System.out.printf("   {");
       for (int j = 0; j < inputArray[i].length - 1; j++) {
         System.out.printf("%s, ", inputArray[i][j]);
       }
       System.out.printf("%s", inputArray[i][inputArray[i].length - 1]);
-      System.out.printf("},");
+      System.out.printf("}%s", i != inputArray.length - 1 ? "," : "");
       System.out.println("");
     }
     System.out.println("}");
